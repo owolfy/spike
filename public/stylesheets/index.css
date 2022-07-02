@@ -1,0 +1,141 @@
+body{
+    background-color: #f4f7f6;
+    margin-top:20px;
+}
+.card {
+    background-color: #EFEAE2;
+    display: flex;
+    flex-direction: row;
+    transition: .5s;
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: .55rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+.chat-app .people-list {
+    background-color: #F0F2F5;
+    width: 280px;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 7;
+}
+
+.chat-app .chat {
+    width: 100%;
+}
+
+.people-list {
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.people-list .chat-list li {
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 3px;
+    border-top: 1px solid #e9edef;
+}
+
+.people-list .chat-list li:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+.people-list .chat-list li .name {
+    font-size: 15px;
+}
+
+.people-list .about {
+    float: left;
+    padding-left: 8px;
+}
+
+.chat .chat-history {
+    padding: 20px;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+.chat .chat-history ul {
+    padding: 0;
+}
+
+.chat .chat-history ul li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.chat .chat-history ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.chat .chat-history .message-data {
+    margin-bottom: 15px;
+}
+
+.chat .chat-history .message {
+    color: #444;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative;
+}
+
+.chat .chat-history .message .message-data-time {
+    display: flex;
+    color: #667781;
+    font-size: 12px;
+    justify-content: end;
+    padding-left: 6px;
+}
+
+.chat .chat-history .message .message-data-username {
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chat .chat-history .my-message {
+    background-color: #D9FDD3;
+    text-align: right;
+}
+
+.chat .chat-history .other-message {
+    background-color: #FFFFFF;
+}
+
+.chat .chat-history .other-message:after {
+    border-bottom-color: #e8f1f3;
+    left: 93%;
+}
+
+.chat .chat-message {
+    background-color: #F0F2F5;
+    padding: 20px;
+}
+
+.chat .chat-message .input-group .input-group-prepend {
+    cursor: pointer;
+}
+
+.chat .chat-message .input-group .input-group-prepend input {
+    display: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
